@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ISTICMondo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <script type="text/javascript" src='scripts/jquery-2.0.3.min.js'></script>
+    <link href='styles/ISTICMondo.css' rel='stylesheet' type='text/css'/>
+  </head>
+  <body ng-app="publicHtmlApp">
+        <div class="Lcontainer" id="LoginScreen">
+            <div class="contained">
+                <div class="container" ng-view="login"></div> 
+            </div>
+        </div>
+        <div class="Lcontainer" id="Personnes">
+            <div class="contained">
+                <div class="container" ng-view="Pesonnes-AfterLogin"></div>
+            </div>
+        </div>
+        <div class="Lcontainer" id="Seances">
+            <div class="contained">
+            <div class="container" ng-view="Seances"></div>
+            </div>
+        </div>
+        <div class="Lcontainer" id="CreateUser">
+            <div class="contained">
+            <div class="container" ng-view="CreateUser">    
+            </div></div>
+        </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="container" ng-view=""></div>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+</body>
+</html>

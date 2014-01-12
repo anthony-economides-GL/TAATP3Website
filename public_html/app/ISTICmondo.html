@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ISTICMondo</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src='js/lib/jquery/jquery-2.0.3.min.js'></script>
+        <link href='css/ISTICMondo.css' rel='stylesheet' type='text/css'/>
+        <script type="text/javascript" src='Resources/ISTICmondo.js'></script>
+    </head>
+    <body>
+        <div class="Lcontainer" id="LoginScreen">
+            
+            <div class="contained">
+            <h3>Login</h3>    
+            <button onclick="GO()">Go To Personnes</button>
+            <button onclick="displayText()">Run JSON</button>
+            <div id="textDisplay">JSON Will Display HERE</div>
+            </div>
+        </div>
+        <div class="Lcontainer" id="Personnes">
+            
+            <div class="contained">
+            <h3>Personnes-After login Screen</h3>    
+            <button onclick="go2()">Go To Seances</button>    
+            </div>
+        </div>
+        <div class="Lcontainer" id="Seances">
+            
+            <div class="contained">
+            <h3>Seances</h3>    
+            <button onclick="go3()">Go To CreateUser</button>    
+            </div>
+        </div>
+        <div class="Lcontainer" id="CreateUser">
+            
+            <div class="contained">
+            <h3>Create user screen</h3>    
+            <button onclick="go4()">Go To Login</button>     
+            </div>
+        </div>
+    </body>
+</html>
